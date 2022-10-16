@@ -2,9 +2,9 @@
   "name": "buggy",
   "version": "1.0.0",
   "description": "A buggy woogie program",
-  "main": "buggy.js"
+  "main": "buggy.js",
   "scripts": {
-    "start": "node buggy.js"
+    "start": "node buggy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

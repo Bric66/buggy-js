@@ -27,9 +27,8 @@ const spartan = {
     company: 'Microsoft',
 }
 
-// Add the missing key in the user object.
+// Add the missing key in the spartan object.
 function getFusilAssaut() {
-    console.log('here the childrens');
     console.log(spartan.weapons);
     // On fait le -1 parce que en programmation on compte à partir du 0 
     // mais le .length retourne le total sans commencer par 0.
@@ -47,16 +46,18 @@ if (!spartan.weapons.includes('sniper')) {
     throw new Error('John 117 should have a sniper too ....');
 }
 
-
 // Oopsy, we add sniper, now this function does not work anymore...
 // Look how to find for exact value in array in javascript.
-getFusilAssaut(); // Dont remove me.
+// dont hesitate to refactor the getFusilAssaut function to find Fusil d'assaut MA5B 
+if (!getFusilAssaut()) {
+    throw new Error(`I am not the Fusil d'assaut MA5B`)
+}
 
 
 // Make sure to convert string to number when making addition.
 function sum() {
     const total = a + b;
-    if (total === "22" || total === "33") {
+    if (total === "22") {
         throw new Error('There is an issue with your typing');
     }
     console.log(`total ====> ${total}`)
@@ -64,8 +65,7 @@ function sum() {
 }
 
 // Dont change me....
-sum(2, '2');
-sum('3', 3);
+sum(2, '2'); // Should be 4
 
 
 
